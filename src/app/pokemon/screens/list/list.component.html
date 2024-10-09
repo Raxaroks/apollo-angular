@@ -1,0 +1,14 @@
+@if (loading) {
+  <pre>Espera...</pre>
+} @else {
+  <ul>
+    @for (item of pkmns; track $index) {
+      <li>
+        <pre>{{ item.name }}</pre>
+        <pre>pokedex entry:  <a [routerLink]="['/pokedex', item.pokemon_species_id]">no. {{ item.pokemon_species_id }}</a></pre>
+      </li>
+    }
+  </ul>
+}
+
+

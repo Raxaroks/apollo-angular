@@ -1,0 +1,39 @@
+
+:host {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: var(--sidebar-base-width);
+
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  background-color: #111;
+  font-size: 1.4rem;
+  overflow-x: hidden;
+
+  nav > ul {
+    padding-top: 4rem;
+    padding-left: 0;
+    list-style: none;
+
+    li > a {
+      color: white;
+      padding: 1.6rem;
+      text-decoration: none;
+      display: block;
+
+      &:hover, &.active-link {
+        background-color: #ddd;
+        color: #111;
+      }
+    }
+
+    li:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+  }
+}

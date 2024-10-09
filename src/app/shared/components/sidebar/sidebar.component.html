@@ -1,0 +1,9 @@
+<nav><ul>
+  @for (route of filteredRoutes; track $index) {
+    <li>
+      <a [routerLink]="route.path"
+        routerLinkActive="active-link"
+        ariaCurrentWhenActive="page">{{ route.title }}</a>
+    </li>
+  }
+</ul></nav>

@@ -1,0 +1,13 @@
+
+:host {
+  .app {
+    &__content {
+      display: flex;
+      font-size: 1.6rem;
+      
+      margin-left: var(--sidebar-base-width);
+      padding: calc(var(--sidebar-base-width) / 10) 1rem;
+    }
+  }
+}
+
